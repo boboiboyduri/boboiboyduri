@@ -1,0 +1,1064 @@
+#loadingBg {
+  background-image: url(https://cdn.dribbble.com/users/1341046/screenshots/6629424/untitled-2.gif);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
+}
+
+#selectorContainer {
+    width:-webkit-fill-available;
+    display:flex;
+    align-items:center;
+    height:180px;
+    margin-bottom:20px;
+}
+
+.selectorItem {
+    left:0;
+    transform:translateX(5%);
+    margin-right:20px;
+    width:200px;
+}
+
+#customizeContainer {
+    float:left;
+    width:100%;
+}
+
+#ingameFPS {
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #00ffff;
+    color: var(--accent) !important;
+    visibility: visible!important;
+}
+
+#fpsDisplay:before {
+     content: '';
+}
+     
+#pingDisplay:before {
+     content: ''
+}
+
+.debugInfo {
+    display: flex;
+    vertical-align: top;
+    flex-direction: column;
+}
+
+#customizeButton .material-icons {
+    display: none;
+}
+
+#customizeButton {
+    height:270px;
+    width:300px;
+    position:fixed;
+    left:27%;
+    top:36%;
+    opacity:0;
+}
+
+#weapDisplay {
+    bottom: 30px;
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.weapIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px #fff) drop-shadow(0px 0px 1px #fff) drop-shadow(2px 0px 1px var(--accent));
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 70px;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+}
+
+.weapKey {
+    display: none;
+}
+
+#chatInput::placeholder{
+    color: transparent;
+}
+
+#chatInputHolder::before{
+    content: "don't be toxic";
+    position: absolute;
+    color: #fff;
+    bottom: 17px;
+    left: 70px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#chatHolder:focus-within #chatInputHolder::before{
+    opacity: 0;
+}
+
+#uiBase.onMenu #spectateUI {
+    display: block!important;
+    position: fixed;
+    bottom: 48.5%;
+    top: unset;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+}
+
+#uiBase.onMenu #spectateHUD {
+    display: flex;
+    justify-content: center;
+    transform: unset;
+    left: unset;
+}
+
+#uiBase.onMenu #specTeam0, #uiBase.onMenu #spec0, #uiBase.onMenu #spec1, #uiBase.onMenu #specNames, #uiBase.onMenu #specStats, #uiBase.onMenu #specContr, #uiBase.onMenu #specKPDContr, #uiBase.onMenu #specSus, #uiBase.onMenu #specTeam1, #uiBase.onMenu #specGMessage, #uiBase.onMenu #specGameInfo {
+    display: none!important
+}
+
+#uiBase.onMenu #specTimer {
+    display: block!important;
+    font-size: 35px;
+    background-color: transparent;
+    color: rgba(255,255,255,.55)
+}
+
+#selectorContainer {
+    width:-webkit-fill-available;
+    display:flex;
+    align-items:center;
+    height:180px;
+    margin-bottom:20px;
+}
+
+.selectorItem {
+    left:0;
+    transform:translateX(5%);
+    margin-right:20px;
+    width:200px;
+}
+
+#customizeContainer {
+    float:left;
+    width:100%;
+}
+
+.button, .button:hover { 
+    border: hidden ! important;
+}
+
+#healthBar {
+    position:fixed;
+    left:50%;
+    bottom:90px;
+    background-color:#69696900;
+    border-radius:100px;
+    height:60px;
+    transform:translate(-50%,-50%) scale(0.7);
+}
+.healthBarSeg {
+    width:60px;
+    border-radius:100%;
+    background-color:#00000000;
+    margin-right:20px;
+    border:6px solid white;
+}
+.hpBSeg {
+    border-radius:100%;
+    box-shadow:none !important;
+    background-color:blue!important;
+}
+
+#pingDisplay .material-icons, #ingressDisplay .material-icons, #egressDisplay .material-icons {
+    font-size: 24px;
+}
+
+#pingIcon {
+    color: var(--accent) !important;
+}
+
+#timerDisplay {
+    position: fixed;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+
+#timerVal {
+    text-shadow: 2px 2px 0 #000;
+}
+
+#timerIcon {
+    display: none;
+}
+
+.settName, .settNameSmall, .setHed, .setBodH, #hostActionH, .mFeatSepar{
+    border: hidden!important;
+    background: transparent !important;
+}
+
+.sliderVal, .selectorItem, .chalCard{
+    border: hidden!important;
+}
+
+#menuWindowHider div[style="height:15px;margin-top:30px;border-top:4px solid rgba(255, 255, 255, 0.8);"]{
+    display: none!important
+}
+
+#windowHolder {
+    background-color:transparent !important;
+}
+
+#selectorContainer, .selectorItem {
+  background-color: transparent!important;
+  filter: drop-shadow(0 0 0.15rem #ff00ff);
+}
+
+.leaderNameM span {
+   webkit-animation: rainbowT .5s linear infinite;
+    animation: rainbowT .5s linear infinite;
+}
+
+#instructions {
+  visibility: hidden;
+}
+
+#instructions:after {
+  visibility: visible;
+  content: 'Good luck';
+  color: #fff;
+  padding-right: 310px!important;
+}
+
+.material-icons[style="color:rgb(255, 75, 66)!important;"]{
+    display: none!Important
+}
+
+#selectorContainer {
+    background-color: (color);
+}
+
+.selectorItem {
+    background-color: (#00ffff)!important;
+}
+
+.classCard {
+    background-color: (#00ffff);
+}
+
+#customizeButton {
+    height:270px;
+    width:300px;
+    position:fixed;
+    left:27%;
+    top:36%;
+    opacity:0;
+}
+
+#customizeButton .material-icons {
+    display: none;
+}
+
+#helpGuidOpn {
+    display: none;
+}
+
+div#helpTxtHol {
+    display: none;
+}
+
+#helpTxtHol {
+    display: none;
+}
+
+#helpPIcon {
+    display: none;
+}
+
+#youNewDiv {
+    display: none;
+}
+
+#editorBtnM {
+    display: none;
+}
+
+#newsHolder {
+    display: none;
+}
+
+.leaderNameM::before { /* leaderboard verified */
+    font-family: 'Material Icons'; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    content: "check_circle";
+    color: #40C4FF;
+    margin-top: -3px;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: -4px;
+}
+
+#mainLogo {
+ content: url(https://cdn.discordapp.com/attachments/908689657083080715/926270922254585936/boboiboyduri_1637728546.png)
+}
+
+.settingsBtn[style="width:auto;background-color:#994cd1"] {
+    display: none !important
+} 
+
+#helpTxtHol  {
+   display:none;
+}
+
+.youNewDiv {display:none !important;}
+
+.custItNm, .settLabel, .loadoutBtn    {
+    color: (#00ffff);
+}
+
+.endTableN[style="color:#fff"]:before {
+    content:"\2192";
+    font-size:25px;
+    margin-right:10px;
+}
+
+.carousel {
+    display: none;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 4px;
+}
+input:checked + .slider {
+      background-color: #000000;
+}
+input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+      -webkit-transform: translateX(30px);
+      -ms-transform: translateX(30px);
+      transform: translateX(30px);
+}
+
+.slidecontainer {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 250px;
+    float: right;
+}
+.sliderM {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 4px;
+}
+.sliderM::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 25px;
+    border-radius: 4px;
+    background: #000000;
+    cursor: pointer;
+}
+.sliderM::-moz-range-thumb {
+    width: 15px;
+    height: 25px;
+    border-radius: 4px;
+    background: #2196F3;
+    cursor: pointer;
+}
+.sliderVal {
+    float: right;
+    display: inline-block;
+    position: relative;
+     width: 50px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+    background: #000000;
+    padding: 5px 10px;
+    margin-left: 8px;
+    margin-right: -10px;
+    border-radius: 6px;
+}
+
+.material-icons.plusOrMinus{
+    display:none!important;
+}
+
+#onetrust-consent-sdk {
+    display: none!important
+}
+
+#mapInfoHolder::after {
+    content: 'CSS MADE BY Venom';
+    visibility: visible;
+    font-size: 15px;
+  background: rgba(255,255,255,.3);
+}
+
+#subLogoButtons {
+    bottom: 72px;
+    transform: translate(-50%,0);
+}
+
+#subLogoButtons>.button {
+    padding: 0 !important;
+    margin: 0 16px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 24px !important;
+    transition-duration: 0.25s;
+}
+
+#subLogoButtons>.button:hover {
+    transform: unset;
+    color: var(--accent);
+}
+
+#menuItemContainer {
+    flex-direction: row;
+    top: unset;
+    bottom: 20px;
+    left: 50%;
+    width: unset;
+    background-color: transparent;
+    transform: translateX(-50%)
+}
+#menuItemContainer > div > span {
+    display: none;
+}
+.menuItem {
+    background-color: transparent;
+    margin: 0 16px;
+}
+
+.menuItem:hover {
+    border-left: none;
+}
+
+.menuItem .menuItemIcon {
+    display: none;
+}
+
+.menuItem .menuItemTitle {
+    margin: 0;
+    font-size: 24px !important;
+    transition-duration: 0.25s;
+}
+
+.menuItem:hover> .menuItemTitle {
+    color: var(--accent);
+}
+
+div#windowHolder[style="display: none;"]{
+    display:block !important;
+    background:rgba(0,0,0,0);
+    transform:scale(0);
+    transition:.4s cubic-bezier(0.88, -0.98, 1, 1);
+}
+div#windowHolder[style="display: block;"]{
+    background:rgba(0,0,0,0);
+    transform:scale(1);
+    transition:.4s cubic-bezier(0.01, 0.01, 0.38, 2.09);
+}
+
+
+#policeButton {
+    margin: 0;
+    padding: 0;
+    height: 40px !important;
+    width: 50px !important;
+    color: #fff;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 370px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    background-image: url(https://cdn.discordapp.com/attachments/606698825058353152/847537821442506802/SorableLogo.png);
+    background-size: cover;
+}
+
+#policeButton img {
+    margin: 0 !important;
+    height: 36px !important;
+    opacity: 0;
+}
+
+#policePopC {
+    background-color: rgba(44,44,44);
+    box-shadow: 0 0 8px 2px var(--accent);
+}
+
+#policePopC [style*="0.6"] {
+    color: rgba(255,255,255,0.5) !important;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 20px;
+}
+
+#chatHolder[style="bottom: 148px;"] {
+    bottom: 30px !important;
+}
+
+#chatList {
+    text-align: center;
+}
+
+#chatList::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+#chatList::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 50px;
+}
+
+#chatList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#chatInput::placeholder{
+    color: transparent;
+}
+
+#chatInputHolder::before{
+    content: "don't be toxic";
+    position: absolute;
+    color: #fff;
+    bottom: 17px;
+    left: 70px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#chatHolder:focus-within #chatInputHolder::before{
+    opacity: 0;
+}
+
+.weaponChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px #fff) drop-shadow(0px 0px 1px #fff) drop-shadow(2px 0px 1px var(--accent));
+}
+
+.chatMsg[style*="#ffffff"] {
+    color: #fff !important;
+}
+
+.chatMsg span {
+	color: var(--accent) !important;
+    opacity: 0.75;
+}
+
+.chatMsg span[style="color:#9eeb56"] {
+    color: #ffffff !important;
+}
+
+.chatMsg span[style="color:#fff"] {
+    color: #ffffff !important;
+}
+
+#chatInput {
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 4px solid var(--accent);
+}
+
+.chatItem {
+   border-radius: 32px !important
+}
+
+#chatInput {
+   border-radius: 50px !important
+}
+
+#voiceDisplay {
+    display: none;
+}
+
+#policeButton {
+    margin: 0;
+    padding: 0;
+    height: 40px !important;
+    width: 50px !important;
+    color: #fff;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 370px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    background-image: url(https://cdn.discordapp.com/attachments/606698825058353152/847537821442506802/SorableLogo.png);
+    background-size: cover;
+}
+
+#policeButton img {
+    margin: 0 !important;
+    height: 36px !important;
+    opacity: 0;
+}
+
+#policePopC {
+    background-color: rgba(44,44,44);
+    box-shadow: 0 0 8px 2px var(--accent);
+}
+
+#policePopC [style*="0.6"] {
+    color: rgba(255,255,255,0.5) !important;
+}
+
+#trustProg {
+    padding: 0;
+    border-radius: 14px;
+    height: 28px;
+    background-color: rgba(255,255,255,0.15);
+}
+
+#trustPrgHD {
+    height: 100%;
+    border-radius: 14px;
+    background-color: var(--accent) !important;
+}
+
+#trustProgHD {
+    text-shadow: none;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+#activateKDM {
+    width: auto;
+    background-color: transparent !important;
+    color: var(--accent);
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#healthBar {
+    position:fixed;
+    left:50%;
+    bottom:90px;
+    background-color:#69696900;
+    border-radius:100px;
+    height:60px;
+    transform:translate(-50%,-50%) scale(0.7);
+}
+.healthBarSeg {
+    width:60px;
+    border-radius:100%;
+    background-color:#00000000;
+    margin-right:20px;
+    border:6px solid white;
+}
+.hpBSeg {
+    border-radius:100%;
+    box-shadow:none !important;
+    background-color: #0037ff !important;
+}
+
+/*Section II: Chat*/
+
+#uiBase.onMenu #chatHolder {
+    left: 20px;
+}
+
+#chatHolder[style="bottom: 148px;"] {
+    bottom: 30px !important;
+}
+
+#chatList {
+    text-align: center;
+}
+
+#chatList::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+#chatList::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 50px;
+}
+
+#chatList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#chatInput::placeholder{
+    color: transparent;
+}
+
+#chatInputHolder::before{
+    content: "don't be toxic";
+    position: absolute;
+    color: #fff;
+    bottom: 17px;
+    left: 70px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#chatHolder:focus-within #chatInputHolder::before{
+    opacity: 0;
+}
+
+.weaponChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px #fff) drop-shadow(0px 0px 1px #fff) drop-shadow(2px 0px 1px var(--accent));
+}
+
+.chatMsg[style*="#ffffff"] {
+    color: #fff !important;
+}
+
+.chatMsg span {
+	color: var(--accent) !important;
+    opacity: 0.75;
+}
+
+.chatMsg span[style="color:#2196f3"] {
+    color: #2196f3 !important;
+}
+
+.chatMsg span[style="color:#2196f3"] {
+    color: #2196f3 !important;
+}
+
+#chatInput {
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 4px solid var(--accent);
+}
+
+.chatItem {
+   border-radius: 32px !important
+}
+
+#chatInput {
+   border-radius: 50px !important
+}
+
+#voiceDisplay {
+    display: none;
+}
+
+/*Weapon Display*/
+
+#weapDisplay {
+    bottom: 30px;
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.weapIcon {
+    margin-right: 0 !important;
+    transition-duration: 0.5s;
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+.weapIcon[style*="opacity: 0.7"], .weapIcon[style*="opacity:0.7"] {
+    position: fixed;
+    right: calc(50% - 64px);
+    bottom: -140px;
+    opacity: 0 !important;
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+.weapIcon[style*="opacity:1"], .weapIcon[style*="opacity: 1"] {
+    position: fixed;
+    bottom: 40px;
+    right: calc(50% - 64px);
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+.weapItem:last-child .weapIcon {
+    transform: translateY(16px);
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+
+#weapIconMel {
+    margin: 0 !important;
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+.weapKey {
+    display: none;
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+#endAContainer,
+#endAMerger,
+.endAHolder,
+#aContainer,
+#aMerger,
+#aHolder,
+.settingsBtn[style="width:auto;background-color:#994cd1"] {
+    display: none !important
+} 
+
+/*Leaderboard*/
+
+.leaderNameM {
+    animation: rainbowT .5s linear infinite;
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: rainbowT;
+}
+
+#leaderDisplay::before {
+    content: "leaderboard";
+    display: flex;
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 4px solid var(--accent);
+    border-image-slice: 1;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+#leaderDisplay {
+    background-color: transparent;
+}
+
+.leaderName, .newLeaderName, .newLeaderNameF, .endTableN[style*="color:#eb5656"] {
+    color: var(--accent) !important;
+}
+
+.leaderNameM span[style] {
+    webkit-animation: rainbowT .5s linear infinite;
+    animation: rainbowT .5s linear infinite;
+    animation-duration: 0.75s; 
+}
+
+#ammoIcon,#huClassIcon, #challIcon {
+    display: none !important;
+}
+
+#claimPop, #popupBack {
+    display: none !important;
+}
+
+.chatMsg {
+    color: #ff1a1a;
+}
+
+.menuSocialB {
+  display: none;
+}
+
+.menBtnIcn {
+  display: none !important;
+}
+
+div#menuBtnProfile,
+div#menuBtnShop {
+  font-size: 0 !important;
+}
+
+div#menuBtnProfile:after {
+  font-size: 25px !important;
+  content  : "Profile"
+}
+
+div#menuBtnShop:after {
+  font-size: 25px !important;
+  content  : "Shop"
+}
+
+.menuItem,
+#subLogoButtons>.button {
+  border-color: transparent !important;
+}
+
+div#rankedSoonTm {
+  display: none !important;
+}
+
+.slider{
+    width:36px;
+    height:36px;
+    border-radius:100px;
+    background:transparent !important;
+    border:4px white solid;
+    top:unset;
+}
+input:checked+.slider:before{
+    background:lime;
+    top:4px;
+    left:4px;
+    transform:unset;
+    height:28px;
+    border-radius:100px;
+    width:28px;
+}
+.slider:before{
+    background-color:red;
+    top:4px;
+    left:4px;
+    transform:unset;
+    height:28px;
+    border-radius:100px;
+    width:28px;
+}
+
+#ammoDisplay {
+    transform:none;
+    border-radius:0;
+    margin:0;
+    padding:0;
+    background-color:transparent;
+    background-image:linear-gradient(to right,#fff,#fff);
+    width:50px;
+    height:4px;
+    position:fixed;
+    left:calc(50% - 30px);
+    top:calc(50% + 30px);
+}
+
+#ammoVal {
+    font-size:50px;
+    position:fixed;
+    right:31%;
+    bottom:25%;
+}
+
+#ammoIcon,#ammoMax {
+    display:none;
+}
+
+:root{
+    --br: 10px; /* Border Radius */
+    --b1: #008eff;
+    --b2: #1b00ff;
+    --b3: #7600e2;
+}
+.healthBarSeg:nth-child(1) .hpBSeg{
+    background: linear-gradient(90deg, var(--b1) 0%, var(--b1) 100%);
+}
+
+.healthBarSeg:nth-child(2) .hpBSeg{
+    background: linear-gradient(90deg, var(--b1) 0%, var(--b2) 100%);
+}
+
+.healthBarSeg:nth-child(3) .hpBSeg{
+    background: linear-gradient(90deg, var(--b2) 0%, var(--b2) 100%);
+}
+
+.healthBarSeg:nth-child(4) .hpBSeg{
+    background: linear-gradient(90deg, var(--b2) 0%, var(--b2) 100%);
+}
+
+.healthBarSeg:nth-child(5) .hpBSeg{
+    background: linear-gradient(90deg, var(--b2) 0%, var(--b3) 100%);
+}
+
+.healthBarSeg:nth-child(6) .hpBSeg{
+    background: linear-gradient(90deg, var(--b3) 0%, var(--b3) 100%);
+}
+.hpBSeg,
+.healthBarSeg{
+    box-shadow: 0 0 black;
+    background: transparent
+}
+
+#faceItIconM {
+    background-color: blue;
+    content: linear-gradient(transparent, transparent);
+    -webkit-mask-image: url(https://krunker.io/img/faceit_1.png);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#instructions {
+    color: #00ffff;
+}
+
+#bottomLeftHolder::before {
+    content: " ";
+    background: url(https://media.discordapp.net/attachments/834450459522629692/851057156538236968/asotlof_png.png);
+    background-size: 450px;
+    background-position-x: center;
+    background-position-y: top;
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    padding: 0;
+    border-radius: 0px;
+    bottom: 0;
+    left: calc(50% - 720px);
+    z-index: -2;
+    filter: drop-shadow(8px 4px var(--accent));
+    opacity: var(--mascot-opacity);
+}
+
+#windowHolder::after {
+    content: " ";
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.discordapp.net/attachments/834450459522629692/870676242100269126/asotlfo.png?width=491&height=701);
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position: right calc(100% - 20px);
+    z-index: 2;
+    pointer-events: none;
+    filter: drop-shadow(2px 2px 0px var(--bg-color)) drop-shadow(-2px -2px 0px var(--bg-color)) drop-shadow(2px -2px 0px var(--bg-color)) drop-shadow(-2px 2px 0px var(--bg-color)) drop-shadow(-2px 2px 0px var(--bg-color));
+    opacity: var(--decals);
